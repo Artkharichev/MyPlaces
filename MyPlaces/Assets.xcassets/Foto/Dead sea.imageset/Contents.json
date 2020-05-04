@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Dead sea.jpeg",
+      "filename" : "Dead sea.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Dead sea-1.jpeg",
+      "filename" : "Dead sea-1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Dead sea-2.jpeg",
+      "filename" : "Dead sea-2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
