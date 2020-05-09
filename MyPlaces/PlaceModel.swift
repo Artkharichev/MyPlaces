@@ -6,28 +6,34 @@
 //  Copyright © 2020 Artem Kharichev. All rights reserved.
 //
 
-import UIKit
+import RealmSwift
 
-struct Place {
+class Place: Object {
     
-    var name: String
-    var location: String?
-    var type: String?
-    var image: UIImage?
-    var placeImage: String?
+    @objc dynamic var name = ""
+    @objc dynamic var location: String?
+    @objc dynamic var type: String?
+    @objc dynamic var imageData: Data?
+
     
     
-    static let placesNames = ["Dead sea", "Masada", "Kesaria", "Petra" , "Old City" ]
+    let placesNames = ["Dead sea", "Masada", "Kesaria", "Petra" , "Old City" ]
     
-    static func  getPlaces() -> [Place] {
-        
-        var places = [Place]()
+    func  savePlaces() {
         
         for place in placesNames {
-            places.append(Place(name: place, location: "Israel", type: "Sights", image: nil, placeImage: place))
+            let image = UIImage(named: place)
+            guard let imageData = image?.pngData() else { return }
+            
+            let newPlace = Place()
+            
+            newPlace.name = place
+            newPlace.location = "Israel"
+            newPlace.type = "Sea"
+            newPlace.imageData = imageData
+            
+            StorageManager.saveObject(newPlace )
+            
         }
-        
-        return places
     }
-    
 }
