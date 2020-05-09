@@ -14,26 +14,13 @@ class Place: Object {
     @objc dynamic var location: String?
     @objc dynamic var type: String?
     @objc dynamic var imageData: Data?
-
     
-    
-    let placesNames = ["Dead sea", "Masada", "Kesaria", "Petra" , "Old City" ]
-    
-    func  savePlaces() {
-        
-        for place in placesNames {
-            let image = UIImage(named: place)
-            guard let imageData = image?.pngData() else { return }
-            
-            let newPlace = Place()
-            
-            newPlace.name = place
-            newPlace.location = "Israel"
-            newPlace.type = "Sea"
-            newPlace.imageData = imageData
-            
-            StorageManager.saveObject(newPlace )
-            
-        }
+    convenience init(name: String, location: String?, type: String?, imageData: Data?) {
+        self.init()
+        self.name = name
+        self.location = location
+        self.type = type
+        self.imageData = imageData
     }
+
 }
