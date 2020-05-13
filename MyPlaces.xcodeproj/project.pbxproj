@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		677A8BFF246C58D9000F0AE7 /* RatingControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677A8BFE246C58D9000F0AE7 /* RatingControll.swift */; };
 		6783A9F22466ADEC00057A8E /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6783A9F12466ADEC00057A8E /* StorageManager.swift */; };
 		67AA7FAB2461AB3100F4A8A9 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AA7FAA2461AB3100F4A8A9 /* PlaceModel.swift */; };
 		67AA7FAD2461C5D100F4A8A9 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AA7FAC2461C5D100F4A8A9 /* NewPlaceViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		0317D7097AE121D7FFA1D231 /* Pods-MyPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.debug.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.debug.xcconfig"; sourceTree = "<group>"; };
 		62F30C205E0889ED42CC025E /* Pods-MyPlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.release.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.release.xcconfig"; sourceTree = "<group>"; };
+		677A8BFE246C58D9000F0AE7 /* RatingControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControll.swift; sourceTree = "<group>"; };
 		6783A9F12466ADEC00057A8E /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		67AA7FAA2461AB3100F4A8A9 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		67AA7FAC2461C5D100F4A8A9 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				67AA7FAA2461AB3100F4A8A9 /* PlaceModel.swift */,
 				6783A9F12466ADEC00057A8E /* StorageManager.swift */,
 				67B3BDF5246090C500BE5448 /* CustomTableViewCell.swift */,
+				677A8BFE246C58D9000F0AE7 /* RatingControll.swift */,
 				67AA7FAC2461C5D100F4A8A9 /* NewPlaceViewController.swift */,
 				67EE442224605D2300FE2EB3 /* Main.storyboard */,
 				67EE442524605D2800FE2EB3 /* Assets.xcassets */,
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67EE441D24605D2300FE2EB3 /* AppDelegate.swift in Sources */,
+				677A8BFF246C58D9000F0AE7 /* RatingControll.swift in Sources */,
 				67AA7FAD2461C5D100F4A8A9 /* NewPlaceViewController.swift in Sources */,
 				67EE4431246065D300FE2EB3 /* TableViewController.swift in Sources */,
 				6783A9F22466ADEC00057A8E /* StorageManager.swift in Sources */,

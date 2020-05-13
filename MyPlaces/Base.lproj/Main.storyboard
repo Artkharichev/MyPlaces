@@ -144,6 +144,23 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="140" id="V5N-gD-irU">
+                                        <rect key="frame" x="0.0" y="506" width="375" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V5N-gD-irU" id="nAu-Ei-OrE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="251.99999999999997" placeholderIntrinsicHeight="44" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HzA-da-K5f" customClass="RatingControll" customModule="MyPlaces" customModuleProvider="target">
+                                                    <rect key="frame" x="61.666666666666657" y="48" width="251.99999999999997" height="44"/>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HzA-da-K5f" firstAttribute="centerY" secondItem="nAu-Ei-OrE" secondAttribute="centerY" id="RPi-P3-Sfe"/>
+                                                <constraint firstItem="HzA-da-K5f" firstAttribute="centerX" secondItem="nAu-Ei-OrE" secondAttribute="centerX" id="XZg-nI-Met"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
