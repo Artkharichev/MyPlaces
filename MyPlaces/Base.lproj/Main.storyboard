@@ -121,7 +121,7 @@
                                                     </constraints>
                                                     <state key="normal" image="Placeholder"/>
                                                     <connections>
-                                                        <segue destination="lzO-tR-fgY" kind="presentation" identifier="getAdress" id="YKq-Wo-9rc"/>
+                                                        <segue destination="lzO-tR-fgY" kind="presentation" identifier="getAddress" id="YKq-Wo-9rc"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -266,6 +266,17 @@
                                     <action selector="doneButtonPressed" destination="lzO-tR-fgY" eventType="touchUpInside" id="cQS-yv-nhq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvk-IY-5yw">
+                                <rect key="frame" x="162.66666666666666" y="688" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7G8-An-N7G"/>
+                                    <constraint firstAttribute="width" constant="50" id="kg7-Cz-2gE"/>
+                                </constraints>
+                                <state key="normal" image="GetDirection"/>
+                                <connections>
+                                    <action selector="goButtonPressed" destination="lzO-tR-fgY" eventType="touchUpInside" id="t2R-n5-tgT"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0h-Fq-qdd">
                                 <rect key="frame" x="305" y="624" width="30" height="30"/>
                                 <constraints>
@@ -280,6 +291,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="zvk-IY-5yw" firstAttribute="centerX" secondItem="rr2-k4-cSE" secondAttribute="centerX" id="1Go-nK-pYK"/>
                             <constraint firstItem="X39-qf-VUV" firstAttribute="centerX" secondItem="rr2-k4-cSE" secondAttribute="centerX" id="CjH-7Q-0rt"/>
                             <constraint firstItem="GCU-1d-rFu" firstAttribute="bottom" secondItem="e0h-Fq-qdd" secondAttribute="bottom" constant="124" id="Hkc-8G-BGH"/>
                             <constraint firstItem="GCU-1d-rFu" firstAttribute="bottom" secondItem="X39-qf-VUV" secondAttribute="bottom" constant="40" id="JRq-CP-5Q3"/>
@@ -292,6 +304,7 @@
                             <constraint firstItem="zsR-NJ-FhI" firstAttribute="top" secondItem="GCU-1d-rFu" secondAttribute="top" constant="40" id="cOK-So-93q"/>
                             <constraint firstItem="GCU-1d-rFu" firstAttribute="trailing" secondItem="aeF-7c-yvA" secondAttribute="trailing" constant="16" id="iRx-7K-5YK"/>
                             <constraint firstAttribute="bottom" secondItem="51R-3w-S12" secondAttribute="bottom" id="jAB-WR-ofZ"/>
+                            <constraint firstItem="GCU-1d-rFu" firstAttribute="bottom" secondItem="zvk-IY-5yw" secondAttribute="bottom" constant="40" id="mQZ-G8-TZM"/>
                             <constraint firstItem="51R-3w-S12" firstAttribute="top" secondItem="rr2-k4-cSE" secondAttribute="top" id="q78-Uw-QWi"/>
                             <constraint firstItem="abg-lv-kd3" firstAttribute="centerY" secondItem="rr2-k4-cSE" secondAttribute="centerY" constant="-20" id="sZM-mc-z8L"/>
                             <constraint firstItem="GCU-1d-rFu" firstAttribute="trailing" secondItem="e0h-Fq-qdd" secondAttribute="trailing" constant="40" id="uFv-v4-Jc6"/>
@@ -299,8 +312,9 @@
                         <viewLayoutGuide key="safeArea" id="GCU-1d-rFu"/>
                     </view>
                     <connections>
-                        <outlet property="adressLabel" destination="aeF-7c-yvA" id="4NQ-h3-cRL"/>
+                        <outlet property="addressLabel" destination="aeF-7c-yvA" id="4NQ-h3-cRL"/>
                         <outlet property="doneButton" destination="X39-qf-VUV" id="fJj-tv-MaE"/>
+                        <outlet property="goButton" destination="zvk-IY-5yw" id="Naw-QM-zUP"/>
                         <outlet property="mapPinImage" destination="abg-lv-kd3" id="MV4-ij-cKg"/>
                         <outlet property="mapView" destination="51R-3w-S12" id="9eD-FE-nx4"/>
                     </connections>
@@ -491,6 +505,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="GetDirection" width="50" height="50"/>
         <image name="Location" width="128" height="128"/>
         <image name="Photo" width="194.66667175292969" height="195.66667175292969"/>
         <image name="Pin" width="40" height="40"/>
