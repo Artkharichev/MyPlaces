@@ -13,6 +13,7 @@
 		67AA7FAB2461AB3100F4A8A9 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AA7FAA2461AB3100F4A8A9 /* PlaceModel.swift */; };
 		67AA7FAD2461C5D100F4A8A9 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AA7FAC2461C5D100F4A8A9 /* NewPlaceViewController.swift */; };
 		67B3BDF6246090C500BE5448 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B3BDF5246090C500BE5448 /* CustomTableViewCell.swift */; };
+		67B870162476D6070068F37C /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B870152476D6070068F37C /* MapManager.swift */; };
 		67EE441D24605D2300FE2EB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EE441C24605D2300FE2EB3 /* AppDelegate.swift */; };
 		67EE441F24605D2300FE2EB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EE441E24605D2300FE2EB3 /* SceneDelegate.swift */; };
 		67EE442424605D2300FE2EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67EE442224605D2300FE2EB3 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		67AA7FAA2461AB3100F4A8A9 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		67AA7FAC2461C5D100F4A8A9 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		67B3BDF5246090C500BE5448 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		67B870152476D6070068F37C /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		67EE441924605D2300FE2EB3 /* MyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67EE441C24605D2300FE2EB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67EE441E24605D2300FE2EB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,10 +66,58 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		67B870182476E24A0068F37C /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				67EE441C24605D2300FE2EB3 /* AppDelegate.swift */,
+				67EE441E24605D2300FE2EB3 /* SceneDelegate.swift */,
+				67EE442524605D2800FE2EB3 /* Assets.xcassets */,
+				67EE443224607B3400FE2EB3 /* .gitignore */,
+			);
+			path = "Support files";
+			sourceTree = "<group>";
+		};
+		67B870192476E26D0068F37C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				67EE4430246065D300FE2EB3 /* TableViewController.swift */,
+				67AA7FAC2461C5D100F4A8A9 /* NewPlaceViewController.swift */,
+				675FD4E6246D8D1700404ED6 /* MapViewController.swift */,
+				67B3BDF5246090C500BE5448 /* CustomTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		67B8701A2476E2B20068F37C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67AA7FAA2461AB3100F4A8A9 /* PlaceModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67B8701B2476E2C10068F37C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				67B870152476D6070068F37C /* MapManager.swift */,
+				6783A9F12466ADEC00057A8E /* StorageManager.swift */,
+				677A8BFE246C58D9000F0AE7 /* RatingControll.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		67B8701C2476E2F00068F37C /* iBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				67EE442224605D2300FE2EB3 /* Main.storyboard */,
+				67EE442724605D2800FE2EB3 /* LaunchScreen.storyboard */,
+			);
+			path = iBuilder;
+			sourceTree = "<group>";
+		};
 		67EE441024605D2300FE2EB3 = {
 			isa = PBXGroup;
 			children = (
-				67EE443224607B3400FE2EB3 /* .gitignore */,
 				67EE441B24605D2300FE2EB3 /* MyPlaces */,
 				67EE441A24605D2300FE2EB3 /* Products */,
 				8A7C60DEDE500D477199A2AB /* Pods */,
@@ -86,18 +136,11 @@
 		67EE441B24605D2300FE2EB3 /* MyPlaces */ = {
 			isa = PBXGroup;
 			children = (
-				67EE441C24605D2300FE2EB3 /* AppDelegate.swift */,
-				67EE441E24605D2300FE2EB3 /* SceneDelegate.swift */,
-				67EE4430246065D300FE2EB3 /* TableViewController.swift */,
-				67AA7FAA2461AB3100F4A8A9 /* PlaceModel.swift */,
-				6783A9F12466ADEC00057A8E /* StorageManager.swift */,
-				67B3BDF5246090C500BE5448 /* CustomTableViewCell.swift */,
-				677A8BFE246C58D9000F0AE7 /* RatingControll.swift */,
-				67AA7FAC2461C5D100F4A8A9 /* NewPlaceViewController.swift */,
-				675FD4E6246D8D1700404ED6 /* MapViewController.swift */,
-				67EE442224605D2300FE2EB3 /* Main.storyboard */,
-				67EE442524605D2800FE2EB3 /* Assets.xcassets */,
-				67EE442724605D2800FE2EB3 /* LaunchScreen.storyboard */,
+				67B870192476E26D0068F37C /* ViewControllers */,
+				67B8701B2476E2C10068F37C /* Helpers */,
+				67B8701A2476E2B20068F37C /* Models */,
+				67B870182476E24A0068F37C /* Support files */,
+				67B8701C2476E2F00068F37C /* iBuilder */,
 				67EE442A24605D2800FE2EB3 /* Info.plist */,
 			);
 			path = MyPlaces;
@@ -234,6 +277,7 @@
 				67EE4431246065D300FE2EB3 /* TableViewController.swift in Sources */,
 				675FD4E7246D8D1700404ED6 /* MapViewController.swift in Sources */,
 				6783A9F22466ADEC00057A8E /* StorageManager.swift in Sources */,
+				67B870162476D6070068F37C /* MapManager.swift in Sources */,
 				67AA7FAB2461AB3100F4A8A9 /* PlaceModel.swift in Sources */,
 				67B3BDF6246090C500BE5448 /* CustomTableViewCell.swift in Sources */,
 				67EE441F24605D2300FE2EB3 /* SceneDelegate.swift in Sources */,
