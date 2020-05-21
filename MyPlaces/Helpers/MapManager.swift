@@ -17,7 +17,7 @@ class MapManager {
     private var directionsArray: [MKDirections] = []
     private let regionInMeters = 1000.00
     
-    // Маркер заведения
+    // Marker Place
     func setupPlacemark(place: Place, mapView: MKMapView) {
         
         guard let location = place.location else { return }
@@ -48,7 +48,7 @@ class MapManager {
         }
     }
     
-    // Проверка доступности сервисов геолокации
+    // Checking the availability of geolocation services
     func checkLocationServices(mapView: MKMapView, segueIdentifier: String, closure: () -> ()) {
         
         if CLLocationManager.locationServicesEnabled() {
@@ -65,7 +65,7 @@ class MapManager {
         }
     }
     
-    // Проверка авторизации прилоежния для исопользования сервисов геолокации
+    // Verification of application authorization for using geolocation services
     func checkLocationAuthorization(mapView: MKMapView, segueIdentifier: String) {
         switch CLLocationManager.authorizationStatus() {
         case .authorizedWhenInUse:
@@ -91,7 +91,7 @@ class MapManager {
         }
     }
     
-    // Фокус карты на местоположении пользователя
+    // Focusing the map on the user's location
     func showUserLocation(mapView: MKMapView) {
         
         if let location = locationManager.location?.coordinate {
@@ -102,7 +102,7 @@ class MapManager {
         }
     }
     
-    // Строим маршрут от местоположения пользователя до заведения
+    // We build a route from the user's location to the institution
     func getDirections(for mapView: MKMapView, previousLocation: (CLLocation) -> ()) {
         
         guard let location = locationManager.location?.coordinate else {
@@ -147,7 +147,7 @@ class MapManager {
         }
     }
     
-    // Настройка запроса для расчета маршрута
+    // Request setup for route calculation
     func createDirectionsRequest(from coordinate: CLLocationCoordinate2D) -> MKDirections.Request? {
         
         guard let destinationCoordinate = placeCoordinate else { return nil }
@@ -163,7 +163,7 @@ class MapManager {
         return request
     }
     
-    // Меняем отображаемую зону области карты в соответствии с перемещением пользователя
+    // Change the displayed area of ​​the map area in accordance with the movement of the user
     func startTrackingUserLocation(for mapView: MKMapView, and location: CLLocation?, closure: (_ currentLocation: CLLocation) -> ()) {
         
         guard let location = location else { return }
@@ -173,7 +173,7 @@ class MapManager {
         closure(center)
     }
     
-    // Сброс всех ранее построенных маршрутов перед построением нового
+    // Reset all previously built routes before building a new one
     func resetMapView(withNew directions: MKDirections, mapView: MKMapView) {
         
         mapView.removeOverlays(mapView.overlays)
@@ -182,7 +182,7 @@ class MapManager {
         directionsArray.removeAll()
     }
     
-    // Определение центра отображаемой области карты
+    // Defining the center of the map area displayed
     func getCenterLocation(for mapView: MKMapView) -> CLLocation {
         
         let latitude = mapView.centerCoordinate.latitude
@@ -203,6 +203,10 @@ class MapManager {
         alertWindow.windowLevel = UIWindow.Level.alert + 1
         alertWindow.makeKeyAndVisible()
         alertWindow.rootViewController?.present(alert, animated: true, completion: nil)
+    }
+    
+    deinit {
+        print("deinit", MapManager.self)
     }
     
 }

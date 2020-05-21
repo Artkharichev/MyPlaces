@@ -90,7 +90,9 @@ class MapViewController: UIViewController {
               goButton.isHidden = false
           }
       }
-    
+    deinit {
+        print("deinit", MapViewController.self)
+    }
 }
 
 

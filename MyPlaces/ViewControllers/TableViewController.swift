@@ -141,6 +141,10 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
         tableView.reloadData()
     }
+    
+    deinit {
+        print("deinit", TableViewController.self)
+    }
 }
 
 extension TableViewController: UISearchResultsUpdating {

@@ -73,6 +73,7 @@
 				67EE441E24605D2300FE2EB3 /* SceneDelegate.swift */,
 				67EE442524605D2800FE2EB3 /* Assets.xcassets */,
 				67EE443224607B3400FE2EB3 /* .gitignore */,
+				67EE442A24605D2800FE2EB3 /* Info.plist */,
 			);
 			path = "Support files";
 			sourceTree = "<group>";
@@ -141,7 +142,6 @@
 				67B8701A2476E2B20068F37C /* Models */,
 				67B870182476E24A0068F37C /* Support files */,
 				67B8701C2476E2F00068F37C /* iBuilder */,
-				67EE442A24605D2800FE2EB3 /* Info.plist */,
 			);
 			path = MyPlaces;
 			sourceTree = "<group>";
@@ -427,7 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T46S69N4HD;
-				INFOPLIST_FILE = MyPlaces/Info.plist;
+				INFOPLIST_FILE = "MyPlaces/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T46S69N4HD;
-				INFOPLIST_FILE = MyPlaces/Info.plist;
+				INFOPLIST_FILE = "MyPlaces/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
