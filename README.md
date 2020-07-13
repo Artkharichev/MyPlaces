@@ -11,4 +11,4 @@ Developed using:
 - UIKit
 - CollectionView and TableView
 - Cosmos libriary (stars / rating
-- Access to privacy
+- Access to privacy.
