@@ -4,7 +4,6 @@ App for conveniently saving favorite places, navigating to them, rating, adding 
 
 Developed using:
 
-- MVC Model
 - Realm, CoreData
 - CoreLocation
 - MapKit
